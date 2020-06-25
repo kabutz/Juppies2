@@ -16,11 +16,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="anagram-game" />
+        <module name="AnagramGame" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="anagram-game" target="14" />
+      <module name="AnagramGame" target="14" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AnagramGame/AnagramGame.iml" filepath="$PROJECT_DIR$/AnagramGame/AnagramGame.iml" />
       <module fileurl="file://$PROJECT_DIR$/Juppies2.iml" filepath="$PROJECT_DIR$/Juppies2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/AnagramGame/anagram-game.iml" filepath="$PROJECT_DIR$/AnagramGame/anagram-game.iml" />
     </modules>
   </component>
 </project>
