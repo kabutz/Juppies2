@@ -1,6 +1,3 @@
-**/build/
-**/dist/
-**/nbproject/
+**/target
+.idea/libraries/Maven*
 out
-*.class
-
