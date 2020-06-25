@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="anagrams">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/AnagramGame/dist/anagrams.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
