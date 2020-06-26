@@ -43,13 +43,13 @@ do. We will also show how to set up all three IDEs in this course.  Similarly,
 because the author uses Mac OS X exclusively, the demos will be done on that
  machine. Windows and Linux will be similar.
 
-* [Apache NetBeans 12.0](https://netbeans.apache.org/download/)
+* [Apache NetBeans](https://netbeans.apache.org/download/) 12.0 or later
   * Team->Git->Clone
     * Repository URL: https://github.com/kabutz/Juppies2.git
     * Clone into: Your choice
     * Click `Finish`
 
-* [Eclipse 2020](https://www.eclipse.org/downloads/)
+* [Eclipse](https://www.eclipse.org/downloads/) 2020 or later
   * Switch to the Git perspective:
     * Window->Perspective->Open Perspective->Other...
     * Choose `Git`
@@ -67,7 +67,7 @@ because the author uses Mac OS X exclusively, the demos will be done on that
   * Switch to the Java perspective, either by clicking the button in the top-right 
   corner with a J icon, or using the method above when switching to the Git perspective.
 
-* [IntelliJ IDEA Community 2020](https://www.jetbrains.com/idea/download/) 
+* [IntelliJ IDEA Community](https://www.jetbrains.com/idea/download/) 2020 or later 
   * File->New->Project from Version Control...
     * Version control: Git
     * URL: https://github.com/kabutz/Juppies2.git
