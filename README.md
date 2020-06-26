@@ -38,10 +38,10 @@ of NetBeans fans that will use nothing else on pain of death. Similarly,
 Eclipse, in combination with some commercial plugins, is also a popular option.
 
 Since the author of this course is most familiar with IntelliJ IDEA, the demos
-will be done with that. However, these are all plain Java code, so any IDE will
-do. We will also show how to set up all three IDEs in this course.  Similarly, 
-because the author uses Mac OS X exclusively, the demos will be done on that
- machine. Windows and Linux will be similar.
+will be mostly done with that. However, we are learning plain Java code, so any IDE will
+do. We will show how to set up Apache NetBeans and IntelliJ IDEA in this course.
+Similarly, because the author uses Mac OS X exclusively, the demos will be done
+on that machine. Windows and Linux will be similar.
 
 * [Apache NetBeans](https://netbeans.apache.org/download/) 12.0 or later
   * Team->Git->Clone
@@ -49,7 +49,14 @@ because the author uses Mac OS X exclusively, the demos will be done on that
     * Clone into: Your choice
     * Click `Finish`
 
-* [Eclipse](https://www.eclipse.org/downloads/) 2020 or later
+* [IntelliJ IDEA Community](https://www.jetbrains.com/idea/download/) 2020 or later 
+  * File->New->Project from Version Control...
+    * Version control: Git
+    * URL: https://github.com/kabutz/Juppies2.git
+    * Directory: Your choice
+    * Click `Clone`
+
+* [Eclipse](https://www.eclipse.org/downloads/) 2020 or later (Not supported in the course)
   * Switch to the Git perspective:
     * Window->Perspective->Open Perspective->Other...
     * Choose `Git`
@@ -67,13 +74,6 @@ because the author uses Mac OS X exclusively, the demos will be done on that
   * Switch to the Java perspective, either by clicking the button in the top-right 
   corner with a J icon, or using the method above when switching to the Git perspective.
 
-* [IntelliJ IDEA Community](https://www.jetbrains.com/idea/download/) 2020 or later 
-  * File->New->Project from Version Control...
-    * Version control: Git
-    * URL: https://github.com/kabutz/Juppies2.git
-    * Directory: Your choice
-    * Click `Clone`
- 
 ## Running the examples
 
 ### AnagramGame
