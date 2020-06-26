@@ -11,13 +11,13 @@ The repository can be cloned in the IDE.
 * IntelliJ IDEA
   * File->New->Project from Version Control...
     * Version control: Git
-    * URL: https://github.com/kabutz/Juppies2.0.git
+    * URL: https://github.com/kabutz/Juppies2.git
     * Directory: Your choice
     * Click `Clone`
 
 * NetBeans
   * Team->Git->Clone
-    * Repository URL: https://github.com/kabutz/Juppies2.0.git
+    * Repository URL: https://github.com/kabutz/Juppies2.git
     * Clone into: Your choice
     * Click `Finish`
 
@@ -27,12 +27,12 @@ The repository can be cloned in the IDE.
     * Choose `Git`
     * In the "Git Repositories" view, click `Clone a Git repository`.
     If you already have Git repositories, click the second button in the small toolbar, with tooltip `Clone a Git Repository and add the clone to this view` 
-      * URI: https://github.com/kabutz/Juppies2.0.git
+      * URI: https://github.com/kabutz/Juppies2.git
       * Next, Next
       * Directory: Your choice
       * Click `Finish
   * File->Open Projects from File System...
-    * Import source: The directory you chose previously (with `/Juppies2.0` at the end)
+    * Import source: The directory you chose previously (with `/Juppies2` at the end)
     * Click `Finish`
   * Switch to the Java perspective, either by clicking the button in the top-right corner with a J icon, or using the method above when switching to the Git perspective.
 
