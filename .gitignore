@@ -1,3 +1,4 @@
 **/target
 .idea/libraries/Maven*
 out
+**/.settings/
