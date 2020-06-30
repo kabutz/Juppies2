@@ -21,42 +21,43 @@
 
 package com.toy.anagrams.lib;
 
+import org.junit.Before;
+import org.junit.Test;
+
 import java.util.Arrays;
-import junit.framework.TestCase;
+
+import static org.junit.Assert.assertTrue;
 
 /**
  * Test of the functionality of {@link WordLibrary}.
  */
-public class WordLibraryTest extends TestCase {
-    WordLibrary wordLibrary;
+public class WordLibraryTest {
+    private WordLibrary wordLibrary;
 
-    public WordLibraryTest(String testName) {
-        super(testName);
-    }
-
-    protected void setUp() throws Exception {
+    @Before
+    public void setUp() {
         wordLibrary = WordLibrary.getDefault();
     }
-    
-    
 
     /**
      * Test of {@link WordLibrary#isCorrect}.
      */
+    @Test
     public void testIsCorrect() {
         for (int i = 0; i < wordLibrary.getSize(); i++) {
             String clearWord = wordLibrary.getWord(i);
             String scrambledWord = wordLibrary.getScrambledWord(i);
             assertTrue("Scrambled word \"" + scrambledWord +
-                       "\" at index: " + i +
-                       " does not represent the word \"" + clearWord + "\"",
-                       isAnagram(clearWord, scrambledWord));
+                            "\" at index: " + i +
+                            " does not represent the word \"" + clearWord + "\"",
+                    isAnagram(clearWord, scrambledWord));
         }
     }
 
     /**
      * Tests whether given anagram represents the word.
-     * @param clearWord The word in clear text
+     *
+     * @param clearWord     The word in clear text
      * @param scrambledWord Scrambled version of the word
      * @return true if the scrambledWord is correct anagram of clearWord
      */
@@ -67,5 +68,4 @@ public class WordLibraryTest extends TestCase {
         Arrays.sort(scrambledArray);
         return Arrays.equals(clearArray, scrambledArray);
     }
-
 }
