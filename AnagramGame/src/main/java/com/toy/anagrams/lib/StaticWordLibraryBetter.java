@@ -24,7 +24,7 @@ package com.toy.anagrams.lib;
 /**
  * Implementation of the logic for the Anagram Game application.
  */
-final class StaticWordLibrary extends WordLibrary {
+public final class StaticWordLibraryBetter extends WordLibraryBetter {
 
     private static final String[] WORD_LIST = {
             "abstraction",
@@ -121,40 +121,13 @@ final class StaticWordLibrary extends WordLibrary {
             "rtdatioialn"
     };
 
-    final static WordLibrary DEFAULT = new StaticWordLibrary();
+    private int nextWordIndex = 0;
 
-    /**
-     * Singleton class.
-     */
-    private StaticWordLibrary() {
-    }
-
-    /**
-     * Gets the word at a given index.
-     *
-     * @param idx index of required word
-     * @return word at that index in its natural form
-     */
-    public String getWord(int idx) {
-        return WORD_LIST[idx];
-    }
-
-    /**
-     * Gets the word at a given index in its scrambled form.
-     *
-     * @param idx index of required word
-     * @return word at that index in its scrambled form
-     */
-    public String getScrambledWord(int idx) {
-        return SCRAMBLED_WORD_LIST[idx];
-    }
-
-    /**
-     * Gets the number of words in the library.
-     *
-     * @return the total number of plain/scrambled word pairs in the library
-     */
-    public int getSize() {
-        return WORD_LIST.length;
+    public Word next() {
+        String correct = WORD_LIST[nextWordIndex];
+        String scrambled = SCRAMBLED_WORD_LIST[nextWordIndex];
+        nextWordIndex++;
+        if (nextWordIndex == WORD_LIST.length) nextWordIndex = 0;
+        return new StaticWord(correct, scrambled);
     }
 }

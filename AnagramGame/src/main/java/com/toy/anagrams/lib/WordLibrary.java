@@ -37,7 +37,7 @@ public abstract class WordLibrary {
      * @return some default implementation of WordLibrary
      */
     public static WordLibrary getDefault() {
-        return StaticWordLibrary.DEFAULT;
+        return new RandomShuffledWordLibrary();
     }
 
     /**
@@ -70,5 +70,7 @@ public abstract class WordLibrary {
      * @param userGuess the user's guess for the actual word
      * @return true if the guess was correct; false otherwise
      */
-    public abstract boolean isCorrect(int idx, String userGuess);
+    final public boolean isCorrect(int idx, String userGuess) {
+        return userGuess.equals(getWord(idx));
+    }
 }

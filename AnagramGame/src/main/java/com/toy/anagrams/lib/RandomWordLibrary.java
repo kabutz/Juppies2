@@ -24,8 +24,7 @@ package com.toy.anagrams.lib;
 /**
  * Implementation of the logic for the Anagram Game application.
  */
-final class StaticWordLibrary extends WordLibrary {
-
+final class RandomWordLibrary extends WordLibrary {
     private static final String[] WORD_LIST = {
             "abstraction",
             "ambiguous",
@@ -121,12 +120,19 @@ final class StaticWordLibrary extends WordLibrary {
             "rtdatioialn"
     };
 
-    final static WordLibrary DEFAULT = new StaticWordLibrary();
-
-    /**
-     * Singleton class.
-     */
-    private StaticWordLibrary() {
+    static {
+        for(int i = 0; i < WORD_LIST.length; i++) {
+            double random = Math.random();
+            double randomLength = random * WORD_LIST.length; // length of 15, randomLength 0..14.999999
+            int to = (int)(randomLength);
+            System.out.println("Swapping " + i + " with " + to);
+            String correct = WORD_LIST[to];
+            String scrambled = SCRAMBLED_WORD_LIST[to];
+            WORD_LIST[to] = WORD_LIST[i];
+            SCRAMBLED_WORD_LIST[to] = SCRAMBLED_WORD_LIST[i];
+            WORD_LIST[i] = correct;
+            SCRAMBLED_WORD_LIST[i] = scrambled;
+        }
     }
 
     /**
