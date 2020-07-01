@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/AnagramGame/pom.xml" />
+        <option value="$PROJECT_DIR$/BruteForcePuzzle/pom.xml" />
       </list>
     </option>
   </component>
