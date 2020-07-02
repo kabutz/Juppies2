@@ -75,7 +75,7 @@ public class Anagrams extends JFrame {
      * Creates new form Anagrams
      */
     public Anagrams() throws IOException {
-        wordLibrary = new FileWordLibrary();
+        wordLibrary = new ScrambledWordLibrary(new FileWordLibrary());
 
         initComponents();
         getRootPane().setDefaultButton(guessButton);
