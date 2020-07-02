@@ -21,16 +21,21 @@
 
 package com.toy.anagrams.lib;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Implementation of the logic for the Anagram Game application.
  */
-final class FileWordLibrary extends WordLibrary {
-    final static WordLibrary DEFAULT = new FileWordLibrary();
+public final class FileWordLibrary extends WordLibrary {
+    private final List<String> wordList;
 
-    /**
-     * Singleton class.
-     */
-    public FileWordLibrary() {
+    public FileWordLibrary() throws IOException {
+        wordList = Files.readAllLines(new File("words.txt").toPath(), Charset.defaultCharset());
     }
 
     /**
@@ -40,7 +45,7 @@ final class FileWordLibrary extends WordLibrary {
      * @return word at that index in its natural form
      */
     public String getWord(int idx) {
-        return WORD_LIST[idx];
+        return wordList.get(idx);
     }
 
     /**
@@ -50,7 +55,10 @@ final class FileWordLibrary extends WordLibrary {
      * @return word at that index in its scrambled form
      */
     public String getScrambledWord(int idx) {
-        return SCRAMBLED_WORD_LIST[idx];
+        String word = getWord(idx);
+        char[] letters = word.toCharArray();
+        Arrays.sort(letters);
+        return new String(letters);
     }
 
     /**
@@ -59,7 +67,7 @@ final class FileWordLibrary extends WordLibrary {
      * @return the total number of plain/scrambled word pairs in the library
      */
     public int getSize() {
-        return WORD_LIST.length;
+        return wordList.size();
     }
 
     /**
