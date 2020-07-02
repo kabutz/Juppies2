@@ -22,24 +22,9 @@
 package com.toy.anagrams.lib;
 
 /**
- * Interface defining logic for the Anagram Game application.
+ * Word library defining logic for the Anagram Game application.
  */
 public abstract class WordLibrary {
-    /**
-     * Constructor for subclasses.
-     */
-    protected WordLibrary() {
-    }
-
-    /**
-     * Getter for the default implementation of the WordLibrary.
-     *
-     * @return some default implementation of WordLibrary
-     */
-    public static WordLibrary getDefault() {
-        return StaticWordLibrary.DEFAULT;
-    }
-
     /**
      * Gets the word at a given index.
      *

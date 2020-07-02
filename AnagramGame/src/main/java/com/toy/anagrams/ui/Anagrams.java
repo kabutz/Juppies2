@@ -21,7 +21,7 @@
 
 package com.toy.anagrams.ui;
 
-import com.toy.anagrams.lib.WordLibrary;
+import com.toy.anagrams.lib.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -70,7 +70,7 @@ public class Anagrams extends JFrame {
      * Creates new form Anagrams
      */
     public Anagrams() {
-        wordLibrary = WordLibrary.getDefault();
+        wordLibrary = WordLibraries.getDefaultWordLibrary();
 
         initComponents();
         getRootPane().setDefaultButton(guessButton);

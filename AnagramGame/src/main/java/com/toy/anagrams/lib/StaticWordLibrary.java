@@ -24,8 +24,7 @@ package com.toy.anagrams.lib;
 /**
  * Implementation of the logic for the Anagram Game application.
  */
-final class StaticWordLibrary extends WordLibrary {
-
+public final class StaticWordLibrary extends WordLibrary {
     private static final String[] WORD_LIST = {
             "abstraction",
             "ambiguous",
@@ -121,14 +120,6 @@ final class StaticWordLibrary extends WordLibrary {
             "rtdatioialn"
     };
 
-    final static WordLibrary DEFAULT = new StaticWordLibrary();
-
-    /**
-     * Singleton class.
-     */
-    private StaticWordLibrary() {
-    }
-
     /**
      * Gets the word at a given index.
      *
@@ -168,5 +159,4 @@ final class StaticWordLibrary extends WordLibrary {
     public boolean isCorrect(int idx, String userGuess) {
         return userGuess.equals(getWord(idx));
     }
-
 }
