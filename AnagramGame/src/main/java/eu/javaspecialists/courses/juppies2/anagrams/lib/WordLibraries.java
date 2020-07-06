@@ -19,14 +19,16 @@
 
 /* Anagram Game Application */
 
-package com.toy.anagrams.lib;
+package eu.javaspecialists.courses.juppies2.anagrams.lib;
 
-// Facade for all word libraries
+/**
+ * Facade for all word libraries.
+ */
 public final class WordLibraries {
     private WordLibraries() {
     }
 
-    public static WordLibrary getDefaultWordLibrary() {
+    public static WordLibrary createDefaultWordLibrary() {
         return new StaticWordLibrary();
     }
 }

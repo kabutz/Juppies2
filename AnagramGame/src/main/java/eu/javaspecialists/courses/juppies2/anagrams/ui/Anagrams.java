@@ -19,9 +19,10 @@
 
 /* Anagram Game Application */
 
-package com.toy.anagrams.ui;
+package eu.javaspecialists.courses.juppies2.anagrams.ui;
 
-import com.toy.anagrams.lib.*;
+import eu.javaspecialists.courses.juppies2.anagrams.lib.WordLibraries;
+import eu.javaspecialists.courses.juppies2.anagrams.lib.WordLibrary;
 
 import javax.swing.*;
 import java.awt.*;
@@ -70,7 +71,7 @@ public class Anagrams extends JFrame {
      * Creates new form Anagrams
      */
     public Anagrams() {
-        wordLibrary = WordLibraries.getDefaultWordLibrary();
+        wordLibrary = WordLibraries.createDefaultWordLibrary();
 
         initComponents();
         getRootPane().setDefaultButton(guessButton);

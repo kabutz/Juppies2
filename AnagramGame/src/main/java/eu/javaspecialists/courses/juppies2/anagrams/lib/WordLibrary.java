@@ -19,7 +19,7 @@
 
 /* Anagram Game Application */
 
-package com.toy.anagrams.lib;
+package eu.javaspecialists.courses.juppies2.anagrams.lib;
 
 /**
  * Word library defining logic for the Anagram Game application.
@@ -55,5 +55,7 @@ public abstract class WordLibrary {
      * @param userGuess the user's guess for the actual word
      * @return true if the guess was correct; false otherwise
      */
-    public abstract boolean isCorrect(int idx, String userGuess);
+    public boolean isCorrect(int idx, String userGuess) {
+        return userGuess.equals(getWord(idx));
+    }
 }

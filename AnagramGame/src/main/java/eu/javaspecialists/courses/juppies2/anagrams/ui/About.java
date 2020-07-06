@@ -19,7 +19,7 @@
 
 /* Anagram Game Application */
 
-package com.toy.anagrams.ui;
+package eu.javaspecialists.courses.juppies2.anagrams.ui;
 
 import javax.swing.*;
 import java.awt.*;

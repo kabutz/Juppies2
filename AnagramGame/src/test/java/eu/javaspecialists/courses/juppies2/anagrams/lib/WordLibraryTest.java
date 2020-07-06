@@ -19,14 +19,13 @@
 
 /* Anagram Game Application */
 
-package com.toy.anagrams.lib;
+package eu.javaspecialists.courses.juppies2.anagrams.lib;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 
-import java.util.Arrays;
+import java.util.*;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * Test of the functionality of {@link WordLibrary}.
@@ -36,7 +35,7 @@ public class WordLibraryTest {
 
     @Before
     public void setUp() {
-        wordLibrary = WordLibrary.getDefault();
+        wordLibrary = WordLibraries.createDefaultWordLibrary();
     }
 
     /**
